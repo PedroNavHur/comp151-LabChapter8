@@ -1,6 +1,7 @@
 // This program demonstrates a Binary Search
 
-//PLACE YOUR NAME HERE
+//Pedro J. Navarrete
+// V1.00
 
 #include<iostream>
 using namespace std;
@@ -12,7 +13,8 @@ const int SIZE = 16;
 int main()
 {
 	int found, value;
-	int array[] = {34,19,19,18,17,13,12,12,12,11,9,5,3,2,2,0}; // array to be searched
+	//int array[] = {34,19,19,18,17,13,12,12,12,11,9,5,3,2,2,0}; // array to be searched
+	int array[] =   {0,2,2,3,5,9,11,12,12,12,13,17,18,19,19,34};
 	
 	cout << "Enter an integer to search for:" << endl;
 	cin >> value;
@@ -45,7 +47,7 @@ int binarySearch(int array[],int numElems,int value) //function heading
 {
 	int first = 0;				    // First element of list
 	int last = numElems - 1;	    // last element of the list
-	int middle;					0   // variable containing the current 
+	int middle;					   // variable containing the current 
 	                                // middle value of the list
 	
 	while (first <= last)
@@ -55,7 +57,7 @@ int binarySearch(int array[],int numElems,int value) //function heading
 	if (array[middle] == value)
 		return middle;		       // if value is in the middle, we are done
 	                                 
-	else if (array[middle]<value)
+	else if (array[middle]>value)
 		last = middle - 1;		   // toss out the second remaining half of
 								   // the array and search the first 
 	else
