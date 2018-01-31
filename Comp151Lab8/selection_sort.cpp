@@ -2,7 +2,8 @@
 // This program uses a selection sort to arrange an array of integers in 
 // ascending order
 
-//PLACE NAME HERE
+//Pedro J. Navarrete
+// V0.5
 
 #include<iostream>
 using namespace std;
