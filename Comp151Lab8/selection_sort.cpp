@@ -3,7 +3,7 @@
 // ascending order
 
 //Pedro J. Navarrete
-// V1.0
+// V1.00
 
 #include<iostream>
 using namespace std;
